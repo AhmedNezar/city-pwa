@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="theme.css?v=1">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<script type="text/javascript" src="main.js?v=1"></script>
+	<script type="text/javascript" src="apiKeys.js?v=1"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Y0OZCvn-hJ1YplN-kxz2jgV3Iy7GtGE&callback=initMap"></script>
+</head>
+<body>
+	<div id="titleContainer">
+		<h1 id="title">My City</h1>
+		<button id="addCity" onclick="addCity()">Add City</button>
+	</div>
+	<div id="cityNameContainer">
+		<h1 id="cityName"></h1>
+	</div>
+	<div id="map"></div>
+	<div id="wiki">
+		<p id="wikiData"></p>
+	</div>
+	<div id="news">
+		<h3 id="newsTitle" class="fontFamily"></h3>
+		<span id="newsAuthor" class="fontFamily"></span>
+		<p id="newsData" class="fontFamily"></p>
+		<a id="newsUrl" class="fontFamily"></a>
+	</div>
+	<div id="weather">
+		<span id="humidityT" class="weatherFontT">Humidity</span>
+		<span id="humidity" class="weatherFont"></span>
+		<span id="pressureT" class="weatherFontT">Pressure</span>
+		<span id="pressure" class="weatherFont"></span>
+		<span id="tempT" class="weatherFontT">Temperature</span>
+		<span id="temp" class="weatherFont"></span>
+		<span id="tempMinT" class="weatherFontT">Temperature Min</span>
+		<span id="tempMin" class="weatherFont"></span>
+		<span id="tempMaxT" class="weatherFontT">Temperature Max</span>
+		<span id="tempMax" class="weatherFont"></span>
+		<span id="windT" class="weatherFontT">Wind Speed</span>
+		<span id="wind" class="weatherFont"></span>
+		<!--<img id="icon"></img>-->
+	</div>
+	<div id="errorBox">
+		<h1 id="errorMessage"></h1>
+	</div>
+</body>
+</html>
